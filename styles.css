@@ -67,20 +67,20 @@
     }
 
     nav button {
-      background-color: #f0f1f8;
-      color: #2c3472;
+      color: #f0f1f8;
+      background-color: #2c3472;
       border: 1px solid #c0c5de;
       border-radius: 6px;
       padding: 0.55rem 1.2rem;
       font-family: 'Geist', sans-serif;
       font-size: 0.9rem;
       cursor: pointer;
-      transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+      transition: background-color 0.7s, color 0.2s, border-color 0.2s;
     }
 
     nav button:hover {
       background-color: #dde0f5;
-      color: #1e2560;
+      color: #1d235a;
       border-color: #7986cb;
     }
 
