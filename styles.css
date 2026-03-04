@@ -102,6 +102,13 @@
       padding-left: 3rem;
     }
 
+    .headshot {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
     /* ── Footer ───────────────────────────────────────── */
     footer {
       background-color: #1a1d27;
