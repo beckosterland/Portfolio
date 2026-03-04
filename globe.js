@@ -25,6 +25,8 @@
       panX: "rotateX",      // drag horizontally → rotate longitude COMMENT OUT
       panY: "rotateY",      // drag vertically   → rotate latitude  COMMENT OUT
       projection: am5map.geoOrthographic(),
+      wheelX: "none",
+      wheelY: "none",
       rotationX: 0,
       rotationY: -20        // slight northward tilt for aesthetics
     })
@@ -70,7 +72,7 @@
     tooltipText: "{name}",  // country name tooltip on hover
     toggleKey: "active",    // click toggles the "active" state
     interactive: false,
-    fill: am5.color(0x2a3a60),
+    fill: am5.color(0xecf0f8),
     stroke: am5.color(0x4a5a90),
     strokeWidth: 0.5,
     fillOpacity: 0.85

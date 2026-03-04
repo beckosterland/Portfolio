@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beck Osterland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Young+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,25 +20,23 @@
     <div class="hero-overlay">
 
       <header>
-        <h1>Beck Osterland</h1>
-        <p class="subtitle">Cartography · Data Visualisation · Remote Sensing</p>
+        <div class="header-left">
+          <img class="header-headshot" src="img/headshot.jpg" alt="Beck Osterland">
+          <div class="header-text">
+            <h1>beck osterland</h1>
+            <p class="subtitle">Cartography · Data Visualisation · Remote Sensing</p>
+          </div>
+        </div>
+        <nav>
+          <a href="#cartography"><button>Cartography</button></a>
+          <a href="#data-viz"><button>Data Viz</button></a>
+          <a href="#remote-sensing"><button>Remote Sensing</button></a>
+          <a href="#about-me"><button>About Me</button></a>
+        </nav>
       </header>
-
-      <nav>
-        <a href="#cartography"><button>Cartography</button></a>
-        <a href="#data-viz"><button>Data Viz</button></a>
-        <a href="#remote-sensing"><button>Remote Sensing</button></a>
-        <a href="#about-me"><button>About Me</button></a>
-      </nav>
 
       <!-- Transparent spacer pushes the slider to the bottom -->
       <div class="hero-spacer"></div>
-
-      <!-- Slider to manually set the globe's horizontal start position 
-      <div class="globe-controls">
-        <label for="globeSlider">Globe Position</label>
-        <input type="range" id="globeSlider" min="-180" max="180" value="0" step="1" />
-      </div> -->
 
     </div><!-- /.hero-overlay -->
 
@@ -46,22 +47,94 @@
 
     <section id="cartography">
       <h2>Cartography</h2>
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <a href="#" class="carousel-card">
+              <img src="img/Vermont.png" class="carousel-img" alt="Topographic Map of Montgomery, VT">
+              <span class="carousel-caption">Topographic Map - Vermont</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <img src="img/nova_scotia.png" class="carousel-img" alt="nova_scotia">
+              <span class="carousel-caption">Nova Scotia Lobster Fishery</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <img src="img/lidar_trees.png" class="carousel-img" alt="Lidar Tree Crown Segmentation">
+              <span class="carousel-caption">Urban Tree Lidar Segmentation</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <div class="carousel-img" style="background:linear-gradient(135deg,#80deea,#0097a7);"></div>
+              <span class="carousel-caption">Project Title</span>
+            </a>
+          </div>
+        </div>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+      </div>
       <p>Projects and work related to cartographic design, map making, and spatial storytelling go here.</p>
     </section>
 
     <section id="data-viz">
       <h2>Data Viz</h2>
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <a href="#" class="carousel-card">
+              <img src="img/health_us_chart.png" class="carousel-img" alt="US_Health">
+              <span class="carousel-caption">NIEHS Pandemic Vulnerability Index</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <img src="img/nyc_water_quality.png" class="carousel-img" alt="NYC_Water">
+              <span class="carousel-caption">NYC Waterbody Quality</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <div class="carousel-img" style="background:linear-gradient(135deg,#80deea,#00838f);"></div>
+              <span class="carousel-caption">Project Title</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <div class="carousel-img" style="background:linear-gradient(135deg,#c8e6c9,#388e3c);"></div>
+              <span class="carousel-caption">Project Title</span>
+            </a>
+          </div>
+        </div>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+      </div>
       <p>Charts, dashboards, and interactive data visualisations showcasing analytical work go here.</p>
     </section>
 
     <section id="remote-sensing">
       <h2>Remote Sensing</h2>
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <a href="#" class="carousel-card">
+              <img src="img/quebec_ndvi.gif" class="carousel-img" alt="NDVI QC">
+              <span class="carousel-caption">NDVI Timelapse</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <img src="img/maracaibo.png" class="carousel-img" alt="Maracaibo">
+              <span class="carousel-caption">Lake Maracaibo Oil Spill</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <img src="img/santiago_pca.gif" class="carousel-img" alt="PCA">
+              <span class="carousel-caption">Principal component analysis - Santiago</span>
+            </a>
+            <a href="#" class="carousel-card">
+              <div class="carousel-img" style="background:linear-gradient(135deg,#f48fb1,#c2185b);"></div>
+              <span class="carousel-caption">Project Title</span>
+            </a>
+          </div>
+        </div>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+      </div>
       <p>Satellite imagery analysis, land-cover classification, and earth observation projects go here.</p>
     </section>
 
     <section id="about-me">
       <h2>About Me</h2>
-      <img class="headshot" src="/img/headshot.jpg" alt="Profile">
+      <img class="headshot" src="img/headshot.jpg" alt="Profile">
       <p>Thanks for stopping by!
           I am a young geographer dedicated to the study of our planet (in all its beauty and tragedy) through the use 
           of spatial data and geo-visualization.</p> 
@@ -134,6 +207,30 @@
   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/themes/Dark.js"></script>
   <script src="globe.js"></script>
+
+  <script>
+    /* ── Carousel navigation ────────────────────────────── */
+    (function () {
+      document.querySelectorAll('.carousel').forEach(function (car) {
+        var vp   = car.querySelector('.carousel-viewport');
+        var prev = car.querySelector('.carousel-btn.prev');
+        var next = car.querySelector('.carousel-btn.next');
+
+        function cardWidth() {
+          var card = vp.querySelector('.carousel-card');
+          var gap  = parseInt(getComputedStyle(vp.querySelector('.carousel-track')).gap) || 16;
+          return card ? card.offsetWidth + gap : 276;
+        }
+
+        prev.addEventListener('click', function () {
+          vp.scrollBy({ left: -cardWidth(), behavior: 'smooth' });
+        });
+        next.addEventListener('click', function () {
+          vp.scrollBy({ left: cardWidth(), behavior: 'smooth' });
+        });
+      });
+    }());
+  </script>
 
 </body>
 </html>
